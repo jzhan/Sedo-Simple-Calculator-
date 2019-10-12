@@ -58,8 +58,8 @@ class Parser: public Lexer {
 
                 if(current_token.type != RPAREN) {
                     if(!error.is_error) {
-                    error.is_error = true;
-                    error.state = UNCOMPLETED_EXPR;
+                        error.is_error = true;
+                        error.state = UNCOMPLETED_EXPR;
                     }
 
                     return temp;
